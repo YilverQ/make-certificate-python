@@ -31,7 +31,7 @@ with open('Data.csv') as csvfile:
         folder_save = os.path.join("Certificados", 
                                     f"{row['id']} - {row['identification_card']}.pdf")
 
-
+        print(template_route + f"/{row['modality']}.css")
         # Abre el archivo en modo de lectura
         file_css = open(template_route + f"/{row['modality']}.css", "r")
         # Lee el contenido del archivo

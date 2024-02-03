@@ -1,5 +1,8 @@
 (NOTA: Cuando se realiza este programa se está usando Python 3.10). 
-Proceso de instalación: 
+
+************************************************************************************************
+****************** PROCESO DE CREACIÓN DE PROYECTO *********************************************
+************************************************************************************************
 	1. Tener instalado Python3 
 
 	2. Se debe Crear un entorno de Python. Pero antes, debemos instalar venv. 
@@ -34,4 +37,32 @@ Proceso de instalación:
 		git add .
 		git commit -m "First Commit"
 
-	12. 
+
+************************************************************************************************
+****************** PROCESO DE CREACIÓN DE INSTALACIÓN ******************************************
+************************************************************************************************
+	1. Tener instalado Python3 
+
+	2. Se debe tener instalado el controlador de versiones de python. 
+		sudo apt install python3.10-venv
+		NOTA: se pone 3.10 porque es la versión donde se está haciendo la prueba. En tu caso debes poner la versión de python que tu usas. Para verificar eso puedes poner: "python3 --version"
+
+	3. Creamos una carpeta donde se almacenará el proyecto. 
+		mkdir "nombre del proyecto"
+
+	4. Creamos un proyecto de git.
+		git init 
+
+	5. Hacemos un pull al proyecto. 
+		git pull https://github.com/YilverQ/make-certificate-python.git 
+
+	6. Creamos un entorno virtual de python. 
+		python3 -m venv env
+
+	7. Activamos el entorno virtual. 
+		source env/bin/activate
+
+	8. Instalamos las dependencias de python
+		pip install -r requirements.txt
+
+	9. Configuramos el proyeto.

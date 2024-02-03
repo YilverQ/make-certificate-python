@@ -1,7 +1,7 @@
 @page { size: Landscape; margin: 0cm }
 
 body{
-    background: url("file:///home/biagni/Documentos/Certificados%20Pendientes/Python%20Script/templates/img/Ponente.png");
+    background: url("file:///home/biagni/Documentos/Certificados%20Pendientes/Python%20Script/templates/img/Organizador.png");
     background-position: center;
     background-size: cover;
     
@@ -37,7 +37,7 @@ h1{
 .number{
     position: absolute;
     bottom: -10px;
-    left: 228px;
+    left: 198px;
     font-family: 'Arial', sans-serif;
 }
 
