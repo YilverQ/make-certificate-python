@@ -1,5 +1,6 @@
+(NOTA: Cuando se realiza este programa se está usando Python 3.10). 
 Proceso de instalación: 
-	1. Tener instalado Python3 (NOTA: Cuando se realiza este programa se está usando Python 3.10). 
+	1. Tener instalado Python3 
 
 	2. Se debe Crear un entorno de Python. Pero antes, debemos instalar venv. 
 		sudo apt install python3.10-venv
@@ -15,8 +16,8 @@ Proceso de instalación:
 	6. Instalamos Jinja2. Este es un motor de plantillas HTML.
 		pip install jinja2
 
-	7. Instalamos pdfkit. Esta es una librería que nos permite convertir archivos HTML a PDF.
-		pip install pdfkit
+	7. Instalamos weasyprint. Esta es una librería que nos permite convertir archivos HTML a PDF.
+		pip install weasyprint
 
 	8. Ahora generamos un archivo de requerimientos. 
 		python -m pip freeze > requirements.txt

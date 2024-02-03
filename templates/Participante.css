@@ -1,0 +1,38 @@
+@page { size: Landscape; margin: 0cm }
+
+body{
+    background: url("https://i.ibb.co/WGQnfdV/Participante.png");
+    background-position: center;
+    background-size: cover;
+    /*Ponente*/
+    /*https://i.ibb.co/89JtkQL/Ponente.png*/
+    /*Organizador*/
+    /*https://i.ibb.co/C6qF6cQ/Organizador.png*/
+}
+
+h1{
+    position: absolute;
+    width: 100%;
+    top: 330px;
+    color: black;
+    text-align: center;    
+    font-family: 'Allura', cursive;
+    font-size: 58px;
+}
+
+.identification{
+    position: absolute;
+    top: 418px;
+    display: inline-block;
+    left: 510px;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.number{
+    position: absolute;
+    bottom: -10px;
+    left: 228px;
+    font-family: 'Arial', sans-serif;
+}
+
