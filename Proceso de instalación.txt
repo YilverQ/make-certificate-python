@@ -61,8 +61,12 @@
 
 	7. Activamos el entorno virtual. 
 		source env/bin/activate
+		NOTA: Este paso siempre debe ejecutarse antes de ejecutar el proyecto.
 
 	8. Instalamos las dependencias de python
 		pip install -r requirements.txt
 
 	9. Configuramos el proyeto.
+
+	10. Podemos ejectuar el proyecto de la siguiente manera
+		python3 main.py
