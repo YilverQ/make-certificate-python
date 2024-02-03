@@ -1,13 +1,18 @@
 @page { size: Landscape; margin: 0cm }
 
 body{
-    background: url("https://i.ibb.co/WGQnfdV/Participante.png");
+    background: url("file:///home/biagni/Documentos/Certificados%20Pendientes/Python%20Script/templates/img/Participante.png");
     background-position: center;
     background-size: cover;
+    
+    /*Participante*/
+    /*https://i.ibb.co/WGQnfdV/Participante.png*/
     /*Ponente*/
-    /*https://i.ibb.co/89JtkQL/Ponente.png*/
+    /*https://i.ibb.co/HqFmHKB/Ponente.png*/
     /*Organizador*/
-    /*https://i.ibb.co/C6qF6cQ/Organizador.png*/
+    /*https://i.ibb.co/Gn4X0M2/Organizador.png*/
+    /*Jurado*/
+    /*https://i.ibb.co/sbfMFbh/Jurado.png*/
 }
 
 h1{

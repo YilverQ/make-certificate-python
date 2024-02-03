@@ -15,19 +15,15 @@ template = env.get_template('template.html') #Obtenemos el archivo template.
 #Lee los datos del archivo CSV y genera un certificado PDF para cada fila:
 with open('Data.csv') as csvfile:
     reader = csv.DictReader(csvfile)
-    number = 0 #Limite de generación
     folder_save = "" #Ruta donde se guardarán los archivos.
     font_config = FontConfiguration() #Configuración para trabajar con fuentes.
-
+    number = 0 #Numero formateado
 
     for row in reader:
-        #Este código es para prevenir que se ejecute varias veces el convertidor de pdf.
-        if number == 1:
-            break
-
         # Renderiza el template con los datos de la fila actual
+        number = "{0:,}".format(int(row['identification_card'])).replace(",", ".")
         rendered_template = template.render(name=row['name'], 
-                                            identification_card=row['identification_card'],
+                                            identification_card= number,
                                             modality=row['modality'],
                                             id=row['id'])
         
@@ -49,5 +45,4 @@ with open('Data.csv') as csvfile:
                                                 stylesheets=[css], 
                                                 font_config=font_config)
 
-        print(f"Documento: {row['identification_card']} Está listo")
-        number += 1
+        print(f"Certificado: {row['id']} - {row['identification_card']} Está listo")

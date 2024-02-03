@@ -4,7 +4,7 @@ body{
     background: url("file:///home/biagni/Documentos/Certificados%20Pendientes/Python%20Script/templates/img/Ponente.png");
     background-position: center;
     background-size: cover;
-
+    
     /*Participante*/
     /*https://i.ibb.co/WGQnfdV/Participante.png*/
     /*Ponente*/
@@ -37,7 +37,7 @@ h1{
 .number{
     position: absolute;
     bottom: -10px;
-    left: 198px;
+    left: 228px;
     font-family: 'Arial', sans-serif;
 }
 
