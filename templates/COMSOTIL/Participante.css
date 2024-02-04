@@ -1,0 +1,34 @@
+@page { size: Landscape; margin: 0cm }
+
+body{
+    background: url("file:///home/biagni/Documentos/Certificados%20Pendientes/Python%20Script/templates/COMSOTIL/Participante.png");
+    background-position: center;
+    background-size: cover;
+}
+
+h1{
+    position: absolute;
+    width: 100%;
+    top: 325px;
+    color: black;
+    text-align: center;    
+    font-family: 'Allura', cursive;
+    font-size: 58px;
+}
+
+.identification{
+    position: absolute;
+    top: 413px;
+    display: inline-block;
+    left: 535px;
+    font-size: 20px;
+    font-family: 'Arial', sans-serif;
+}
+
+.number{
+    position: absolute;
+    bottom: 40px;
+    left: 185px;
+    font-family: 'Arial', sans-serif;
+}
+

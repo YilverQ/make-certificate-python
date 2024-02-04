@@ -22,18 +22,21 @@
 	7. Instalamos weasyprint. Esta es una librería que nos permite convertir archivos HTML a PDF.
 		pip install weasyprint
 
-	8. Ahora generamos un archivo de requerimientos. 
+	8. Instalamos pdf2image. Esta es una librería para convertir pdf a imagenes. 
+		pip install pdf2image
+
+	9. Ahora generamos un archivo de requerimientos. 
 		python -m pip freeze > requirements.txt
 
-	9. Tenemos que crear un archivo de .gitignore. 
+	10. Tenemos que crear un archivo de .gitignore. 
 		touch .gitignore
 		nano .gitignore
 		env/ (Dentro del archivo)
 
-	10. Iniciamos un proyecto con git. 
+	11. Iniciamos un proyecto con git. 
 		git init
 
-	11. Agregamos el primer commit. 
+	12. Agregamos el primer commit. 
 		git add .
 		git commit -m "First Commit"
 
