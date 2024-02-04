@@ -7,6 +7,16 @@ from weasyprint.text.fonts import FontConfiguration #Nos permite agreagar fuente
 from pdf2image import convert_from_path, convert_from_bytes #Convierte un PDF a imagen
 
 
+#Creamos una carpeta para almacenar los certificados
+certificates_folder = "Certificados"
+try:
+    # Crea la carpeta
+    os.mkdir(certificates_folder)
+    print("Carpeta creada exitosamente")
+except FileExistsError:
+    print("La carpeta ya existe")
+
+
 #Cargamos los archivos de plantilla desde el directorio de plantilla
 template_route = "./templates"
 env = Environment(loader=FileSystemLoader(template_route))
@@ -30,7 +40,7 @@ with open('Data.csv') as csvfile:
         
         #Indicamos la ruta y el nombre del certificado
         nameFile = f"{row['id']} - {row['identification_card']}.png"
-        folder_save = os.path.join("Certificados", nameFile) #Combina nos rutas, en este caso combina una ruta con el nombre del archivo.
+        folder_save = os.path.join(certificates_folder, nameFile) #Combina nos rutas, en este caso combina una ruta con el nombre del archivo.
 
         # Abre el archivo en modo de lectura
         file_css = open(template_route + f"/{row['model']}" + f"/{row['modality']}.css", "r")
